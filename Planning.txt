@@ -1,0 +1,22 @@
+Podemos pegar os dados de todos os anuncios e fazer analises neles.
+Pegamos alguns poucos exemplos e fazemos algumas consultas no FIPE, só para vermos se o modelo não se encontra fora de padrões reais. (Fizemos isso em sala e reparamos que o modelo da FIPE tava bem parecido, coisa de menos de 5% de diferença)
+
+Ao analisar a database de anuncios , podemos perceber que muitos modelos de carros se comportam da maneira esperada, ou seja: modelos iguais, mas com anos mais antigos apresentam preços menores, motores mais fracos apresentam preços menores, etc.
+
+Sendo assim, talvez podemos fazer o seguinte:
+	Limpamos a database de maneira mais "bruta", sem se preocupar muito com casos individuais, dado que temos muitos carros.  --ok
+		Ex de limpeza: 
+			A coluna Motor deve ser um int (para representar 1.0, 2.0, etc)
+			A coluna ano deve ser int
+			E por aí vai.
+			
+A sugestão de limpar a database de maneira mais "bruta", vem do fato de que temos muitos dados à disposição, então, em um primeiro momento, não seria um problema perdermos uma grande porcentagem de dados ao fazer as análises.	
+	
+Com os dados que sobraram, podemos também fazer alguns outros cortes, como por exemplo:
+
+		Para um dado modelo, somente vamos considera-lo na database caso tenhamos mais de X casos.  --  ok
+			Dessa forma, removemos cada modelo que se tem menos que X ocorrencias.
+			
+		Isso faria com que teríamos uma base de dados ainda menor, mas dessa vez teriamos uma confiança maior nos dados, dado que poderiamos pegar a interferencia de cada caraterísitica do carro separadamente, para diferentes modelos e marcas.
+	
+Como consequencia, no final de tudo, teriamos menos carros, mais os dados seriam mais significativos e poderíamos fazer análises mais relevantes, como a diferença de cada feature no carro, etc.

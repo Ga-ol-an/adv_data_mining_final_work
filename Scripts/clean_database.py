@@ -31,5 +31,23 @@ annouced_cars = apply_mask(motor_regex, 'descricao', annouced_cars )
 #Cria a coluna motor
 annouced_cars['motor'] = annouced_cars['descricao'].str.extract(motor_regex, expand=False)
 
-#Printa a coluna Motor
-print(annouced_cars['motor'])
+
+## O código a seguir remove linhas baseado no numero de ocorrencia
+
+# Define the columns to consider
+columns_to_check = ['marca', 'modelo', 'tipo'] 
+
+# Define the threshold for the number of occurrences
+occurrence_threshold = 15  
+
+# Create a mask to identify rows with values that occur more than 15 times
+mask = annouced_cars.groupby(columns_to_check)[columns_to_check[0]].transform('count') > 15
+
+# Filter the data based on the mask
+annouced_cars = annouced_cars[mask]
+
+
+# Display the resulting data
+print(annouced_cars)
+
+annouced_cars.to_csv('outputs/db_filtrado_04062023.csv', index=False)

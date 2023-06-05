@@ -4,7 +4,7 @@ Pegamos alguns poucos exemplos e fazemos algumas consultas no FIPE, só para ver
 Ao analisar a database de anuncios , podemos perceber que muitos modelos de carros se comportam da maneira esperada, ou seja: modelos iguais, mas com anos mais antigos apresentam preços menores, motores mais fracos apresentam preços menores, etc.
 
 Sendo assim, talvez podemos fazer o seguinte:
-	Limpamos a database de maneira mais "bruta", sem se preocupar muito com casos individuais, dado que temos muitos carros.	
+	Limpamos a database de maneira mais "bruta", sem se preocupar muito com casos individuais, dado que temos muitos carros.  --ok
 		Ex de limpeza: 
 			A coluna Motor deve ser um int (para representar 1.0, 2.0, etc)
 			A coluna ano deve ser int
@@ -14,7 +14,7 @@ A sugestão de limpar a database de maneira mais "bruta", vem do fato de que tem
 	
 Com os dados que sobraram, podemos também fazer alguns outros cortes, como por exemplo:
 
-		Para um dado modelo, somente vamos considera-lo na database caso tenhamos mais de X casos. 
+		Para um dado modelo, somente vamos considera-lo na database caso tenhamos mais de X casos.  --  ok
 			Dessa forma, removemos cada modelo que se tem menos que X ocorrencias.
 			
 		Isso faria com que teríamos uma base de dados ainda menor, mas dessa vez teriamos uma confiança maior nos dados, dado que poderiamos pegar a interferencia de cada caraterísitica do carro separadamente, para diferentes modelos e marcas.

@@ -50,4 +50,4 @@ annouced_cars = annouced_cars[mask]
 # Display the resulting data
 print(annouced_cars)
 
-annouced_cars.to_csv('outputs/db_filtrado_04062023.csv', index=False)
+annouced_cars.to_csv('Outputs/db_filtrado_04062023.csv', index=False)

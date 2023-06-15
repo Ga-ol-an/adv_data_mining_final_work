@@ -10,16 +10,16 @@ Nesse repositório se encontra o trabalho desenvolvido e realizado na disciplina
 - Observações do Loic
     - `Prefiro pouco bem feito (boa metodologia, bem justificada, visualização e interpretação dos achados, etc.) a muitas coisas não tão bem feitas.  Em particular, prefiro um só modelo de regressão a vários, desde que vocês explicam bem como escolheram o modelo (vão testar vários), como validaram ele (evitando sobreajuste), com o cuidado de ver se tem pouca multicolinearidade antes de interpretar um estimador, talvez comentando as melhores/piores ofertas o site (preços previstos bem abaixo/acima do previsto pelo modelo, o que pode permitir de comentar limitações, como características não levada em conta pelo modelo), etc.`
     - Melhorias no Relatório
-        - Enriquecer o contexto com dados sobre o crescimento nos preços de automóveis
-        - Definição de usado/seminovo
+        - :heavy_check_mark: Enriquecer o contexto com dados sobre o crescimento nos preços de automóveis 
+        - :heavy_check_mark: Definição de usado/seminovo
         - [Visualização] Discutir estatísticas (range, média, desvio padrão) dos preços médios dos carros (que aparentemente não seguem uma normal)
             - `como falei para vocês, não sei se a definição de outlier do boxplot é pertinente.  Parece mais que esses atributos têm distribuições com codas pesadas.  Talvez até distribuições em lei de potência.`
         - [Visualização] Discutir distribuição dos preços médios
             - Histograma ordenado na vertical
             - Verificar lei de potência
                 - `Talvez a distribuição segue uma lei de potência e, neste caso, pode ser que a média e o desvio padrão não fazem sentido.  Uma lei de potência se caracteriza olhando o diagrama de dispersão dos pontos de abscissas log(ranqueamento do preço médio) (log(1) para o maior preço, log(2) para o segundo maior, etc.) e de ordenadas log(preço médio) (então necessariamente vai decrescendo).  Se, nesse diagrama, os pontos são alinhados (para ranques cobrindo três ordens de grandeza consecutivas) então vocês têm uma lei de potência.`
-        - Escrever quando foram realizados os scrapings
-        - Limitações da pesquisa
+        - :heavy_check_mark: Escrever quando foram realizados os scrapings
+        - :heavy_check_mark: Limitações da pesquisa
             - Carros de luxo não aparecem no site; carros desaparecem depois de 1 dia que são vendidos (mudou nosso foco para analisar os acessórios desejáveis e sua influência no preço dos anúncios)
         - `As tabelas tomam muito espaço.  Na versão final do relatório, vocês podem ignorar os atributos que nunca usam.`
     - Tarefas de mineração de dados que podemos realizar

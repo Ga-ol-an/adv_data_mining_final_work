@@ -33,5 +33,5 @@ Nesse repositório se encontra o trabalho desenvolvido e realizado na disciplina
         - [ ] Regressão linear por modelo de carro
             - [ ] `Com muitos atributos independentes e poucos carros (especialmente se vocês criam um modelo de regressão por modelo de carro: talvez seria melhor um modelo para compacto, um para sedan, uma para SUV, etc.: tem essas categorias?), pode haver sobreajuste: pode usar validação cruzada (que ensinarei quando apresentarei a classificação) para evitar isso, retirando os atributos menos úteis à predição.  Também pode haver multicolinearidade.  Impede a interpretação de estimativas de parâmetros (mas não é um problema para melhorar as predições).  Antes de interpretar uma tal estimativa, olhem o coeficiente de determinação do modelo que prevê o atributo correspondente a partir dos demais atributos explicativos.  Se for próximo de 1, não pode interpretar a estimativa.`
 - [x] Trocar o boxplot do relatório
-- [] Fica faltando filtrar a base para pegar apenas modelos com um mínimo de ocorrências nos anúncios.
+- [ ] Fica faltando filtrar a base para pegar apenas modelos com um mínimo de ocorrências nos anúncios.
 
